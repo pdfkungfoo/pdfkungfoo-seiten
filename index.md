@@ -1,12 +1,11 @@
 ---
 title: Startseite
 layout: default
-created: PLACEHOLDER_CREATED_DATE
-createdlink: PLACEHOLDER_CREATED_LINK
-lastmod: PLACEHOLDER_LASTMOD_DATE
-commitlink: PLACEHOLDER_COMMIT_LINK
+created: Tue Apr 1 10:57:47 2025 +0200
+createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/45a2544
+lastmod: Tue Apr 1 10:57:47 2025 +0200
+commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/45a2544
 ---
-
 
 
 # Hallo, Leute. Hier spricht 'pdfkungfoo'...
