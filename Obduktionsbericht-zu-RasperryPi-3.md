@@ -1,8 +1,10 @@
 ---
-title: ObduktionsBericht
-created: Mon Mar 31 22:43:40 2025 +0200
-lastmod: Mon Mar 31 22:47:55 2025 +0200
+title: "Obduktion Raspberry Pi 3"
 layout: default
+created: PLACEHOLDER_CREATED_DATE
+createdlink: PLACEHOLDER_CREATED_LINK
+lastmod: PLACEHOLDER_LASTMOD_DATE
+commitlink: PLACEHOLDER_COMMIT_LINK
 ---
 
 
