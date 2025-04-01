@@ -99,14 +99,15 @@ Dadurch entfällt die komplexe Konvertierung von Druckdaten, die früher die Tre
 **2.3 Die erste Inkarnation von IPP Everywhere: *Airprint von Apple***
 
 Während der Begriff "IPP Everywhere" nicht unbedingt sehr bekannt ist -- von *Apple Airprint* hat wohl jeder iPhone- oder iPad-Besitzer schonmal gehört.
-In Wirklichkeit verbarg sich damals schon die Magie des *IPP Everyhwere*-Konzepts hinter der Sache.
+In Wirklichkeit verbarg sich damals schon die Magie des *IPP Everywhere*-Konzepts hinter der Sache.
 Airprint war die erste populäre Implementierung von IPP Everywhere (dessen genaue Spezifikation damals zugegebenermaßen noch nicht final war, jedoch bereits seit Jahren in der Diskussion).
 
 Apple preschte mit der Airprint-Veröffentlichung im November 2010 vor.
 Dabei waren zunächst nur ganze 12 Geräte offiziell Airprint-fähig (alles HP PhotoSmarts).
 
-Inzwischen können dies mehr als 10.000 verschiedene Modelle von mehr als einem Dutzend Hersteller.
-Man muss seit mehr als 14 Jahren keinen Treiber mehr installieren, um Airprint-zertifizierte Drucker direkt verwenden zu können.
+Inzwischen haben mehr als 10.000 verschiedene Modelle von mehr als einem Dutzend Hersteller diese Fähigkeit.
+Viele sogar, ohne offiziell von Apple "zertifiziert" zu sein.
+Man muss seit mehr als 14 Jahren keinen Treiber mehr installieren, um Airprint-fähige Drucker direkt verwenden zu können.
 Es funktioniert.
 Einfach so.
 
@@ -124,10 +125,16 @@ Selbstverständlich, wie sollte es auch anders sein!, gab es in der IT-Welt und 
 ## **3. IPP – Wie funktioniert die Kommunikation?**
 
 IPP basiert auf dem HTTP-Protokoll.
-Jeder Druckauftrag ist eine HTTP-POST-Anfrage mit speziellen IPP-Daten.
-Die wichtigsten IPP-Operationen sind:
+Jeder Druckauftrag ist eine HTTP-POST-Anfrage mit speziell codierten IPP-Daten.
+
+Analog zu den HTTP-Operationen (wenige: POST, PUT, GET, HEAD, PUT, DELET, LINK, UNLINK, CONNECT, OPTIONS, TRACE) definierte IPP viele für das Drucken wichtige eigene Operationen (manchmal auch "Methoden" oder "Verben" genannt).
+Zu allen Operationen gehören beschreibende Attribute.
+
+Die wichtigsten IPP-Operationen sind im folgenden beispielhaft gelistet.
 
 ### **3.1 Wichtige IPP-Operationen**
+
+Alle IPP-Operation schreiben sich aus zusammengesetzten Worten nach dem Schema: Wortanfang großgeschrieben, mit Bindestrichen verbunden. Beispiele:
 
 1. **Get-Printer-Attributes**
    - Fragt die Druckereigenschaften ab (Medien, Formate, Druckmodi).
@@ -147,7 +154,26 @@ Die wichtigsten IPP-Operationen sind:
 6. **Pause-Printer / Resume-Printer**
    - Setzt einen Drucker in den Pause- oder Wiederaufnahme-Modus.
 
-**3.2 HTTP und IPP**
+### **3.3 IPP-Attribute**
+
+Zur Beschreibung aller IPP-Objekte (Drucker, Job, Dokument, Ressource, System, Abonnement) verwendet das IPP strikt definierte IPP-*Attribute*.
+Viele Hundert davon!
+Alles ins Kleinste spezifiziert...
+
+Sie alle setzen sich zusammen aus kleingeschriebenen Worten, mit Bindestrichen verbunden, zu denen entsprechende Schlüsselwörter gehören.
+Beispiele: 
+
+- `sides=two-sided-long-edge` (Duplex-Druck-Auftrag für "normales Umblättern")
+- `sides=two-sided-short-edge` (Duplex-Druck "wie Wandkalender hochklappen")
+- `which-jobs=completed` (für Abfragen nach fertiggestellten Aufträgen)
+- `which-jobs=cancelled` (für Abfragen nach abgebrochenen Aufträgen)
+- `which-jobs=processing` (für Abfragen nach gerade laufenden Aufträgen)
+- `media=iso_a4_210x297mm` (zur Spezifikation von DIN A4-Papier)
+- `pdf-versions-supported=adobe-1.6` (Auskunft, dass der Drucker PDF-1.6 verabeiten kann)
+- `printer-state-reasons=input-media-tray-failure` (Grund, warum der Drucker stoppt: Papierfach hat versagt)
+- `feed-orientation=short-edge-first` (Transport-Richtung des Papiers: kurze Kante voraus)
+
+### **3.4 HTTP und IPP**
 
 IPP verwendet HTTP als Transportprotokoll.
 Ein Drucker fungiert als HTTP-Server, der auf IPP-Anfragen antwortet.
@@ -190,10 +216,10 @@ Ein IPP-Drucker lässt sich auf verschiedene Weise finden:
    - Unternehmen verwalten Drucker über ein zentrales System.
 
 4. **Software wie CUPS:**
-   - Administratoren nutze das Web-Interface des Schedulers oder CLI-Tools zum Auffinden angeschlossener neuer Drucker
+   - Administratoren nutzen das Web-Interface des Schedulers oder CLI-Tools zum Auffinden angeschlossener neuer Drucker
 
 5. **Kommandozeilen-Werkzeuge (CLI-Tools):**
-   - Der `ippfind`-Befehl auf Linux, macOS (und sogar Windows, wenn er installiert ist) meldet die URI aller auffindbaren Drucker im LAN oder WLAN.
+   - Der `ippfind`-Befehl (ohne weitere Parameter) auf Linux, macOS (und sogar Windows, wenn er installiert ist) meldet die URI aller auffindbaren Drucker im LAN oder WLAN.
 
 ---
 
@@ -229,7 +255,7 @@ IPP ist die Zukunft des Druckens – einfach, sicher und flexibel.
 Damit wir Infos aus dem Drucker herauskitzeln, verwenden wir zwei Kommandozeilen-Tools: `ippfind` und `ipptools`.
 Beide sind für Linux, macOS und Windows verfügbar.
 
-1. **`ippfind` verwenden, um seinen IPP-URI ausfindig zu machen:**
+1. **`ippfind` verwenden, um IPP-URIs von Druckern ausfindig zu machen:**
 
    Unter Linux oder macOS ist das ganz easy-peasy im Terminal:
 
@@ -242,7 +268,7 @@ Beide sind für Linux, macOS und Windows verfügbar.
    Unter Windows muss man leider von der [PWG-Webseite](https://pwg.org/ippeveselfcert/) die *IPP Self-Certification Tools* sowie *Bonjour for Windows* herunterladen und installieren.
 
    Bei meinem Drucker, einem *HP PageWide* ist die IPP-URI diese hier, wie oben herausgefunden: `ipp://HP10E7C65B6968-741.local:631/ipp/print`.
-   Alternativ könnte man anstatt des *hostname.local* auch einfach die bekannte IP-Adresse einsetzen.
+   Alternativ könnte man anstatt des *hostname.local* auch einfach die IP-Adresse einsetzen, falls bekannt.
 
 2. **`ipptool` verwenden, um alle Infos aus dem Drucker zu kitzeln:**
 
@@ -251,15 +277,19 @@ Beide sind für Linux, macOS und Windows verfügbar.
 
    Das Tool erfordert auf der Kommandozeile mehrere Parameter, damit die Rückgabe Menschen-lesbarer Text ist:
 
-   - **`-t`**: 
+   - **`-t`**: produziere einen Test-Bericht (und mache ihn im Terminal sichtbar)
 
-   - **`-t`**: 
+   - **`-v`**: für *verbose*, ausführlich
 
-   - **eine Text-Datei**: in ihr sind die Details IPP-Protokoll-konform hinterlegt, die das `ipptool` befolgen soll, damit der Drucker alles über sich verrät.
-      Im vorliegenden Fall die mitgelieferte Datei *get-printer-attributes.test*.
+   - **IPP-URI**: den *Universal Ressource Locator* der IPP-Drucker-Queue, wo sie ihre Druck-Jobs erwartet
 
-   Das Kommando lautet für Linux und macOS so: `ipptool -tv ipp://HP10E7C65B6968-741.local:631/ipp/print get-printer-attributes.test`
-   Da die Rückgabe viele Zeilen Text ergeben kann, ist es ratsam, diesen in einer Text-Datei aufzufangen, um ihn in Ruhe studieren zu können:
+   - **eine Text-Datei**: darin sind die Details der Abfrage hinterlegt, ganz IPP-Protokoll-konform, wie man es alleine auf einer Kommandozeile wohl kaum zustande bringen könnte.
+     `ipptool` befolgt diese Details, um die Abfrage so zu konstruieren, dass der Drucker alles über sich verrät.
+      Im vorliegenden Fall ist es die mitgelieferte Datei *get-printer-attributes.test*.
+
+   Das Kommando lautet für Linux und macOS so:\
+   `ipptool -tv ipp://HP10E7C65B6968-741.local:631/ipp/print get-printer-attributes.test`\
+   Da die Rückgabe viele Zeilen Text ergeben kann, ist es ratsam, diesen in einer Datei aufzufangen, um ihn in Ruhe studieren zu können:
 
    ~~~bash
    ipptool -tv ipp://HP10E7C65B6968-741.local:631/ipp/print get-printer-attributes.test | tee output-von-get-printer-attributes.txt
@@ -269,10 +299,12 @@ Beide sind für Linux, macOS und Windows verfügbar.
    Da die Dateien nicht im Suchpfad liegen, musste ich sie mit komplettem Pfad spezifizieren:
 
    ~~~powershell
-   kurtp: & "C:\Program Files\IPP Everywhere v1.1 Update 4 Printer Self-Certification Tools\ipptool.exe" -tv ipp://192.168.18.126/ipp/print C:\Users\kurtp\get-printer-attributes.test
+   kurtp:> & "C:\Program Files\IPP Everywhere v1.1 Update 4 Printer Self-Certification Tools\ipptool.exe" -tv ipp://192.168.18.126/ipp/print C:\Users\kurtp\get-printer-attributes.test
    ~~~
  
-3. **Hier kommt das Ergebnis für meinen PageWide:**
+3. **Hier kommt das Ergebnis für meinen 'PageWide'**
+   
+   Es lohnt sich, dieses Zeile für Zeile in allen Einzelheiten zu studieren, wenn man sich für das Innenleben eines IPP-fähigen Druckers interessiert:
 
 ~~~bash
     "C:\Users\kurtp\get-printer-attributes.test":
@@ -440,7 +472,9 @@ Beide sind für Linux, macOS und Windows verfügbar.
         multiple-document-jobs-supported (boolean) = false
 ~~~
 
-Ich wette, viel von euch besitzen einen IPP-Drucker, drucken erfolgreich damit und... wissen gar nicht, was der vor jedem Druckjob den Druck-Clients über sich erzählt, bevor er auch nur 1 Blatt Paper ausspuckt.
+4. **Meine Saal-Wette**
+
+Ich wette, viele von euch besitzen einen IPP-Drucker, drucken erfolgreich damit und... wissen gar nicht, was der vor jedem Druckjob den Druck-Clients über sich erzählt, bevor er auch nur 1 Blatt Paper ausspuckt...
 
 
 <!-- 
