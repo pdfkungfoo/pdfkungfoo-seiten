@@ -1,5 +1,5 @@
 ---
-title: "Clock change detected"
+title: "Fix für systemd-resolved: 'Clock change detected' unter WSL2"
 layout: default
 created: Tue Apr 1 11:40:24 2025 +0200
 createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/cc8079f
