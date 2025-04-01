@@ -1,10 +1,10 @@
 ---
-title: "Obduktion Raspberry Pi 3"
+title: Obduktionsbericht zu Raspberry Pi 3
 layout: default
-created: PLACEHOLDER_CREATED_DATE
-createdlink: PLACEHOLDER_CREATED_LINK
-lastmod: PLACEHOLDER_LASTMOD_DATE
-commitlink: PLACEHOLDER_COMMIT_LINK
+created: Tue Apr 1 11:50:56 2025 +0200
+createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/e3eee7a
+lastmod: Tue Apr 1 11:50:56 2025 +0200
+commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/e3eee7a
 ---
 
 
