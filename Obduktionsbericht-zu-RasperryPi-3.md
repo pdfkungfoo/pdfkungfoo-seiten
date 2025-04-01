@@ -80,6 +80,7 @@ Dies bestätigt einen **Hardlock oder Stromversorgungsproblem**, **nicht** einen
 
 Mal sehen, wie lange das jetzt hält...
 
+<!--
 ## Siehe auch:
 
 [README-time-flush-fix](#README-time-flush-fix) |
@@ -88,5 +89,6 @@ Mal sehen, wie lange das jetzt hält...
 [Avahi](#Avahi) |
 [Watchdog](#Watchdog) |
 [Index](#Index) |
+-->
 
-
+----
