@@ -8,7 +8,7 @@ commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/9a4218b
 ---
 
 
-# README: Obduktionsbericht zum ungeplanten Ausfall meines alt-ehrwürdigen Raspberry Pi 3
+# Obduktionsbericht zum ungeplanten Ausfall meines alt-ehrwürdigen Raspberry Pi 3
 
 Dieses Dokument rekonstruiert die Ereignisse rund um den plötzlichen Ausfall eines Raspberry Pi 3.
 Der fungiert als Brücke, DNS-Server/Ad-Blocker (Pi-hole) und NextCloud-Provider in einem Zwei-WLAN-Haus.
