@@ -1,11 +1,12 @@
 ---
-title: ClockChange
+title: "Clock change detected"
 layout: default
-created: PLACEHOLDER_CREATED_DATE
-createdlink: PLACEHOLDER_CREATED_LINK
-lastmod: PLACEHOLDER_LASTMOD_DATE
-commitlink: PLACEHOLDER_COMMIT_LINK
+created: Tue Apr 1 11:40:24 2025 +0200
+createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/cc8079f
+lastmod: Tue Apr 1 11:40:24 2025 +0200
+commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/cc8079f
 ---
+
 
 # Fix für wiederholte "Clock change detected"-Probleme unter WSL2
 
