@@ -1,10 +1,10 @@
 ---
-title: "Font-Test für Code-Blöcke"
+title: "Typografie-Testseite für Code-Blöcke"
 layout: default
-created: PLACEHOLDER_CREATED_DATE
-createdlink: PLACEHOLDER_CREATED_LINK
-lastmod: PLACEHOLDER_LASTMOD_DATE
-commitlink: PLACEHOLDER_COMMIT_LINK
+created: Tue Apr 1 12:22:59 2025 +0200
+createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/3da4e64
+lastmod: Tue Apr 1 12:22:59 2025 +0200
+commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/3da4e64
 ---
 
 ## Font-Test für Codeblöcke
