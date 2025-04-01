@@ -3,10 +3,9 @@ title: "Obduktionsbericht zu Raspberry Pi 3"
 layout: default
 created: Tue Apr 1 11:50:56 2025 +0200
 createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/e3eee7a
-lastmod: Tue Apr 1 13:02:08 2025 +0200
-commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/9a4218b
+lastmod: Tue Apr 1 13:20:28 2025 +0200
+commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/da4c711
 ---
-
 
 # Obduktionsbericht zum ungeplanten Ausfall meines alt-ehrwürdigen Raspberry Pi 3
 
