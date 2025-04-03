@@ -1,55 +1,32 @@
 ---
-title: "pdfkungfoo – Technik-Blog, vermischt mit Anderem"
-layout: default
-created: Tue Apr 1 10:57:47 2025 +0200
-createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/45a2544
-lastmod: Tue Apr 1 12:45:28 2025 +0200
-commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/8b9059e
+title: "Inhaltsverzeichnis"
+created: AUTO
+createdlink: AUTO
+lastmod: AUTO
+commitlink: AUTO
 ---
 
+# Übersicht über alle Artikel
 
-# Hallo, Leute. Hier spricht 'pdfkungfoo'...
-
-<!--
-created: Mon Mar 31 22:21:57 2025 +0200
-createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/1234567
-lastmod: Mon Mar 31 23:06:47 2025 +0200
-commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/89abcde
--->
-
-Dies ist der Anfang meines öffentlichen Technik-Blogs. 
-Hier dokumentiere ich, was ich im Alltag rund um's Drucken, um Netzwerke, CUPS, IPP, Raspberry Pi, Pi-hole, DNS, Nextcloud, SSH, Avahi, Git, Monitoring und allerlei Kommandozeilen-Tools erlebe und mitmache.
-
-**Themen, die mich aktuell beschäftigen:**
-
-- Meine 10 Bienenvölker auswintern
-- Dieselben Bienenvölker wenige Wochen darauf vom Schwärmen abhalten
-- Zwei WLANs in einem Haus sauber verbinden
-- Failover zwischen den zwei WLANS, die zwei verschiedene ISPs benutzen
-- Raspberry Pi 3 als Pi-hole
-- Pi-hole als DNS, DHCP und Monitoring-Tool
-- NextCloud ebenfalls noch auf den alten Raspi draufquetschen
-- WSL2 unter Windows 11
-- SSH-Stabilität und Zeitprobleme unter WSL
-- mDNS, DNS-SDE, Bonjour und Dienst-Verfügbarkeit über Netzgrenzen hinweg
-- vielleicht auch mal mit 3D-Drucken anfangen
-- vier alte MäcBook Airs (aus den Jahren 2011-2013) nützlichen Zwecken zuführen
-- Dokumentation als Markdown + GitHub Pages
-
----
-
-### Nächste Schritte:
-
-- Ich verlinke hier demnächst ausgewählte Markdown-Dateien aus allen persönlichen Steckenpferd-Projekten
-- Dazu kommt eine thematische Gliederung nach Netz, Dienste, Systemtools, Pi-hole, etc.
-- Später möglicher Wechsel auf Jekyll-Blogsystem mit Beitragsarchiv
-
----
-
-**🛠 In Arbeit. Stay tuned.**
-
----
-
-[Mein GitHub-Profil](https://github.com/pdfkungfoo)
-
-
+- [Artikel: Was Entwickler, Nerds und Admins über IPP wissen sollten](./Artikel-zu-IPP-und-Treiberloses-Drucken)
+- [ChatGPT-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle](./ChatGPT-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle)
+- [Checkliste-Umzug-Pi3-auf-Pi5](./Checkliste-Umzug-Pi3-auf-Pi5)
+- [Claude-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle](./Claude-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle)
+- [Copilot-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle](./Copilot-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle)
+- [Dummy-test](./Dummy-test)
+- [Fix für systemd-resolved: 'Clock change detected' unter WSL2](./Fix-für-clock-change-detected-unter-WSL2)
+- [Gemini-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle](./Gemini-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle)
+- [Groks-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle](./Groks-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle)
+- [Mein Vergleich: HomeAssistant vs. ioBroker vs. OpenHAB](./HomeAssistant-vs-ioBroker-vs-openHAB)
+- [HomeAssistant-vs-ioBroker](./HomeAssistant-vs-ioBroker)
+- [How-to-include-Windows-System-Fonts-in-LuaLaTex-Documents](./How-to-include-Windows-System-Fonts-in-LuaLaTex-Documents)
+- [Obduktionsbericht zu Raspberry Pi 3](./Obduktionsbericht-zu-RasperryPi-3)
+- [Perplexity-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle](./Perplexity-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle)
+- [Qwens-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle](./Qwens-Bewertung-meiner-HomeAssistant-vs-ioBroker-vs-openHAB-Tabelle)
+- [SmartHome-Systeme-im-Vergleich](./SmartHome-Systeme-im-Vergleich)
+- [Vergleich-RasPi3-vs-RasPi5](./Vergleich-RasPi3-vs-RasPi5)
+- [Wie-man-Windows-Schriften-in-LuaLaTeX-Dokumenten-verwendet](./Wie-man-Windows-Schriften-in-LuaLaTeX-Dokumenten-verwendet)
+- [dummy](./dummy)
+- [Irgendein Titel](./frontmatter.dummy)
+- [github-publishing-struktur](./github-publishing-struktur)
+- [Typografie-Testseite für Code-Blöcke](./teststyles)
