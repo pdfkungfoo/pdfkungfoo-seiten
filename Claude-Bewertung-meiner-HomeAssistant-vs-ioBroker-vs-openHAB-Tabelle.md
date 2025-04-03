@@ -1,10 +1,9 @@
 ---
 title: "Bewertung meines Home Automation-Vergleichs durch Claude"
-layout: default
-created: AUTO
-createdlink: AUTO
-lastmod: AUTO
-commitlink: AUTO
+created: Thu Apr 3 23:26:31 2025 +0200
+createdlink: 23cd528
+lastmod: Thu Apr 3 23:26:31 2025 +0200
+commitlink: 23cd528
 ---
 
 # Frage an Claude
