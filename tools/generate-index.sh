@@ -53,3 +53,7 @@ done < "$TMPFILE"
 
 rm "$TMPFILE"
 
+echo "========================================================================="
+echo "Vergiss nicht: index.md nicht committen – wird von GitHub Action erzeugt!"
+echo "========================================================================="
+echo
