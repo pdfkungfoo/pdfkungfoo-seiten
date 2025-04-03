@@ -1,3 +1,12 @@
+---
+title: "Bewertung meines Home Automation-Vergleichs durch Qwen"
+layout: default
+created: AUTO
+createdlink: AUTO
+lastmod: AUTO
+commitlink: AUTO
+---
+
 # Frage an Qwen
 
 **_"Qwen, ich schreibe gerade ein Markdown-Dokument, in dem ich drei verschiedene SmartHome-System vergleiche. Ich möchte demnächst eine Entscheidung dazu treffen, welches dieser drei ich selbst verwende._**
@@ -112,6 +121,6 @@ Viel Erfolg bei deiner Entscheidung!
 
 ---
 
-Share-Link: https://chat.qwen.ai/s/bcea0796-73bd-4aef-a2cb-9bcb88d0eed9 
+Share-Link: [https://chat.qwen.ai/s/bcea0796-73bd-4aef-a2cb-9bcb88d0eed9](https://chat.qwen.ai/s/bcea0796-73bd-4aef-a2cb-9bcb88d0eed9)
 
 ---

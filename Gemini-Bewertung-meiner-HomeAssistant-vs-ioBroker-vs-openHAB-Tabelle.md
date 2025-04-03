@@ -1,3 +1,12 @@
+---
+title: "Bewertung meines Home Automation-Vergleichs durch Gemini"
+layout: default
+created: AUTO
+createdlink: AUTO
+lastmod: AUTO
+commitlink: AUTO
+---
+
 # Frage an Gemini
 
 **_"Gemini, ich schreibe gerade ein Markdown-Dokument, in dem ich drei verschiedene SmartHome-System vergleiche. Ich möchte demnächst eine Entscheidung dazu treffen, welches dieser drei ich selbst verwende._**
@@ -47,6 +56,6 @@ Ich hoffe, diese Vorschläge helfen Ihnen dabei, Ihr Markdown-Dokument noch weit
 
 ---
 
-Share-Link: https://g.co/gemini/share/072775216714 
+Share-Link: [https://g.co/gemini/share/072775216714](https://g.co/gemini/share/072775216714)
 
 ---

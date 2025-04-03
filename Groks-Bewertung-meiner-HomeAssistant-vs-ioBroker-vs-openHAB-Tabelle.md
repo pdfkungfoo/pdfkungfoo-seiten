@@ -1,3 +1,12 @@
+---
+title: "Bewertung meines Home Automation-Vergleichs durch Grok"
+layout: default
+created: AUTO
+createdlink: AUTO
+lastmod: AUTO
+commitlink: AUTO
+---
+
 # Frage an Grok
 
 **_"Grok, ich schreibe gerade ein Markdown-Dokument, in dem ich drei verschiedene SmartHome-System vergleiche. Ich möchte demnächst eine Entscheidung dazu treffen, welches dieser drei ich selbst verwende._**
@@ -108,6 +117,6 @@ Wenn du eine Entscheidung treffen willst, würde ich fragen: Was ist dir persön
 
 ---
 
-Share-Link: https://grok.com/share/bGVnYWN5_6ea0572b-aaa9-4c96-8764-a03ba0dffeee
+Share-Link: [https://grok.com/share/bGVnYWN5_6ea0572b-aaa9-4c96-8764-a03ba0dffeee](https://grok.com/share/bGVnYWN5_6ea0572b-aaa9-4c96-8764-a03ba0dffeee)
 
 ---

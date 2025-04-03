@@ -1,3 +1,12 @@
+---
+title: "Bewertung meines Home Automation-Vergleichs durch Perplexity"
+layout: default
+created: AUTO
+createdlink: AUTO
+lastmod: AUTO
+commitlink: AUTO
+---
+
 # Frage an Perplexity
 
 **_"Perplexity, ich schreibe gerade ein Markdown-Dokument, in dem ich drei verschiedene SmartHome-System vergleiche. Ich möchte demnächst eine Entscheidung dazu treffen, welches dieser drei ich selbst verwende._**
@@ -55,6 +64,6 @@ Citations:
 
 ---
 
-Share-Link: https://www.perplexity.ai/search/perplexity-ich-schreibe-gerade-1bd6wYG8QN.fRRBhUS9RrA#0
+Share-Link: [https://www.perplexity.ai/search/perplexity-ich-schreibe-gerade-1bd6wYG8QN.fRRBhUS9RrA#0](https://www.perplexity.ai/search/perplexity-ich-schreibe-gerade-1bd6wYG8QN.fRRBhUS9RrA#0)
 
 ---

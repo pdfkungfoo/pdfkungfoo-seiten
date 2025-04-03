@@ -1,3 +1,12 @@
+---
+title: "Bewertung meines Home Automation-Vergleichs durch ChatGPT"
+layout: default
+created: AUTO
+createdlink: AUTO
+lastmod: AUTO
+commitlink: AUTO
+---
+
 # Frage an ChatGPT
 
 **_"ChatGPT, ich schreibe gerade ein Markdown-Dokument, in dem ich drei verschiedene SmartHome-System vergleiche. Ich möchte demnächst eine Entscheidung dazu treffen, welches dieser drei ich selbst verwende._**
@@ -84,6 +93,6 @@ Was bringt dich jetzt am meisten weiter?
 
 ---
 
-Share-Link: https://chatgpt.com/share/67ee4bd7-a6fc-8013-9597-f589c328b4a4
+Share-Link: [https://chatgpt.com/share/67ee4bd7-a6fc-8013-9597-f589c328b4a4](https://chatgpt.com/share/67ee4bd7-a6fc-8013-9597-f589c328b4a4)
 
 ---

@@ -1,3 +1,12 @@
+---
+title: "Bewertung meines Home Automation-Vergleichs durch Copilot"
+layout: default
+created: AUTO
+createdlink: AUTO
+lastmod: AUTO
+commitlink: AUTO
+---
+
 # Frage an Copilot
 
 **_"Copilot, ich schreibe gerade ein Markdown-Dokument, in dem ich drei verschiedene SmartHome-System vergleiche. Ich möchte demnächst eine Entscheidung dazu treffen, welches dieser drei ich selbst verwende._**
@@ -69,6 +78,6 @@ Gibt es aktuelle konkrete Einsatzszenarien oder besondere Anforderungen (zum Bei
 
 ---
 
-Share-Link: https://copilot.microsoft.com/shares/vjnf7AQvL5WTc4Dt2BrcA 
+Share-Link: [https://copilot.microsoft.com/shares/vjnf7AQvL5WTc4Dt2BrcA](https://copilot.microsoft.com/shares/vjnf7AQvL5WTc4Dt2BrcA)
 
 ---

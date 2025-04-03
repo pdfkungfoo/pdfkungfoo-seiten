@@ -1,3 +1,12 @@
+---
+title: "Bewertung meines Home Automation-Vergleichs durch Claude"
+layout: default
+created: AUTO
+createdlink: AUTO
+lastmod: AUTO
+commitlink: AUTO
+---
+
 # Frage an Claude
 
 **_"Claude, ich schreibe gerade ein Markdown-Dokument, in dem ich drei verschiedene SmartHome-System vergleiche. Ich möchte demnächst eine Entscheidung dazu treffen, welches dieser drei ich selbst verwende._**
@@ -48,7 +57,7 @@ Dein Fazit ist prägnant und trifft die Kernpunkte gut. Die Tabelle ist sehr üb
 
 ---
 
-Share-Link: 
+Share-Link: [https://claude.ai/share/e8b73e0a-a1e2-4205-bea0-1cb87a89e982](https://claude.ai/share/e8b73e0a-a1e2-4205-bea0-1cb87a89e982)
 
 ---
 
