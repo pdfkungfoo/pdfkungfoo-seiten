@@ -6,13 +6,21 @@ OUTFILE="index.md"
 TMPFILE="toc.tmp"
 
 # Kopfbereich mit Frontmatter (Platzhalter für Datum)
+created_hash=$(git log --diff-filter=A --follow --format=%h -1 -- index.md)
+created_date=$(git log --diff-filter=A --follow --format=%cd -1 -- index.md)
+lastmod_hash=$(git log --follow --format=%h -1 -- index.md)
+lastmod_date=$(git log --follow --format=%cd -1 -- index.md)
+
+created_link="https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/${created_hash}"
+lastmod_link="https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/${lastmod_hash}"
+
 cat <<EOF > "$OUTFILE"
 ---
 title: "Inhaltsverzeichnis"
-created: AUTO
-createdlink: AUTO
-lastmod: AUTO
-commitlink: AUTO
+created: ${created_date}
+createdlink: ${created_link}
+lastmod: ${lastmod_date}
+commitlink: ${lastmod_link}
 ---
 
 # Übersicht über alle Artikel
