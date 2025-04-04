@@ -1,59 +1,49 @@
 #!/bin/bash
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
 
-set -e
+OUTPUT_FILE="index.md"
 
-OUTFILE="index.md"
-TMPFILE="toc.tmp"
+echo "---" > "$OUTPUT_FILE"
+echo "title: \"Inhaltsverzeichnis\"" >> "$OUTPUT_FILE"
+echo "layout: default" >> "$OUTPUT_FILE"
+echo "publish: true" >> "$OUTPUT_FILE"
+echo "---" >> "$OUTPUT_FILE"
+echo "" >> "$OUTPUT_FILE"
+echo "# Verzeichnis aller veröffentlichten Artikel" >> "$OUTPUT_FILE"
+echo "" >> "$OUTPUT_FILE"
 
-# Kopfbereich mit Frontmatter (Platzhalter für Datum)
-created_hash=$(git log --diff-filter=A --follow --format=%h -1 -- index.md)
-created_date=$(git log --diff-filter=A --follow --format=%cd -1 -- index.md)
-lastmod_hash=$(git log --follow --format=%h -1 -- index.md)
-lastmod_date=$(git log --follow --format=%cd -1 -- index.md)
-
-created_link="https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/${created_hash}"
-lastmod_link="https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/${lastmod_hash}"
-
-cat <<EOF > "$OUTFILE"
----
-title: "Inhaltsverzeichnis"
-created: ${created_date}
-createdlink: ${created_link}
-lastmod: ${lastmod_date}
-commitlink: ${lastmod_link}
----
-
-# Übersicht über alle Artikel
-
-EOF
-
-# Immer ganz oben: Willkommen.md
+# Willkommen zuerst
 if [ -f "Willkommen.md" ]; then
-  title=$(grep -m1 '^title:' Willkommen.md | cut -d ':' -f2- | sed 's/^ *//; s/"//g')
-  [[ -z "$title" ]] && title="Willkommen"
-  echo "- [${title}](./Willkommen)" >> "$OUTFILE"
-  echo "" >> "$OUTFILE"
+  title=$(awk -F': ' '/^title:/ {print $2}' "Willkommen.md" | tr -d '"')
+  echo "- [${title}](Willkommen)" >> "$OUTPUT_FILE"
+  echo "" >> "$OUTPUT_FILE"
 fi
 
-# Hole alle .md-Dateien außer index.md und Willkommen.md
-find . -maxdepth 1 -name "*.md" ! -name "index.md" ! -name "Willkommen.md" | while read file; do
-  # Erstes Commit-Datum ermitteln
-  date=$(git log --reverse --format="%ct" -- "$file" | head -n 1)
-  printf "%s\t%s\n" "$date" "$file"
-done | sort -n > "$TMPFILE"
+tempfile=$(mktemp)
 
-# Liste einfügen
-while IFS=$'\t' read -r timestamp file; do
-  # Titel extrahieren
-  title=$(grep -m1 '^title:' "$file" | cut -d ':' -f2- | sed 's/^ *//; s/"//g')
-  [[ -z "$title" ]] && title=$(basename "$file" .md)
-  link=$(basename "$file" .md)
-  echo "- [${title}](./${link})" >> "$OUTFILE"
-done < "$TMPFILE"
+# Schleife über alle *.md
+git ls-files -z -- '*.md' | while IFS= read -r -d '' file; do
+  [[ "$file" == "index.md" || "$file" == "Willkommen.md" ]] && continue
 
-rm "$TMPFILE"
+  if awk '
+    BEGIN { in_yaml=0; found=0 }
+    /^---/ { in_yaml++; next }
+    in_yaml == 1 && /^publish:[[:space:]]*true/ { found=1 }
+    END { exit !found }
+  ' "$file"; then
+    ts=$(git log --diff-filter=A --follow --format=%at -- "$file" | tail -1)
+    echo "$ts|$file" >> "$tempfile"
+  fi
+done
 
-echo "========================================================================="
-echo "Vergiss nicht: index.md nicht committen – wird von GitHub Action erzeugt!"
-echo "========================================================================="
-echo
+# Sortiert einfügen
+sort -n "$tempfile" | cut -d'|' -f2- | while IFS= read -r file; do
+  title=$(awk -F': ' '/^title:/ {print $2}' "$file" | tr -d '"')
+  [[ -z "$title" ]] && title="$file"
+  link="${file%.md}"
+  echo "- [${title}](${link})" >> "$OUTPUT_FILE"
+done
+
+rm "$tempfile"
+

@@ -5,6 +5,7 @@ created: 2025-04-01T09:17:48+02:00
 createdlink: 65bdbab
 lastmod: 2025-04-01T13:30:06+02:00
 commitlink: bd06cd6
+publish: true
 ---
 
 # Obduktionsbericht zum ungeplanten Ausfall meines alt-ehrwürdigen Raspberry Pi 3

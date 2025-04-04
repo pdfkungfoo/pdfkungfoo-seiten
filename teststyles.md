@@ -5,6 +5,7 @@ created: 2025-04-01T12:22:59+02:00
 createdlink: 3da4e64
 lastmod: 2025-04-01T13:12:05+02:00
 commitlink: 30f927b
+publish: true
 ---
 
 ## Font-Test für Codeblöcke
