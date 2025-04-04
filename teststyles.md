@@ -1,10 +1,10 @@
 ---
 title: "Typografie-Testseite für Code-Blöcke"
 layout: default
-created: Tue Apr 1 12:22:59 2025 +0200
-createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/3da4e64
-lastmod: Tue Apr 1 12:27:27 2025 +0200
-commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/ea525dd
+created: 2025-04-01T12:22:59+02:00
+createdlink: 3da4e64
+lastmod: 2025-04-01T13:12:05+02:00
+commitlink: 30f927b
 ---
 
 ## Font-Test für Codeblöcke

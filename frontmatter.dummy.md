@@ -1,10 +1,10 @@
 ---
 title: "Irgendein Titel"
 layout: default
-created: PLACEHOLDER_CREATED_DATE
-createdlink: PLACEHOLDER_CREATED_LINK
-lastmod: PLACEHOLDER_LASTMOD_DATE
-commitlink: PLACEHOLDER_COMMIT_LINK
+created: 2025-04-03T15:55:04+02:00
+createdlink: dc2d9ca
+lastmod: 2025-04-03T15:55:04+02:00
+commitlink: dc2d9ca
 ---
 
 

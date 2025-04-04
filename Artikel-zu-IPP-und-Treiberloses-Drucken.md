@@ -1,10 +1,10 @@
 ---
 title: "Artikel: Was Entwickler, Nerds und Admins über IPP wissen sollten"
 layout: default
-created: PLACEHOLDER_CREATED_DATE
-createdlink: PLACEHOLDER_CREATED_LINK
-lastmod: PLACEHOLDER_LASTMOD_DATE
-commitlink: PLACEHOLDER_COMMIT_LINK
+created: 2025-04-01T18:58:24+02:00
+createdlink: e0405e3
+lastmod: 2025-04-01T20:31:12+02:00
+commitlink: 71341df
 ---
 
 

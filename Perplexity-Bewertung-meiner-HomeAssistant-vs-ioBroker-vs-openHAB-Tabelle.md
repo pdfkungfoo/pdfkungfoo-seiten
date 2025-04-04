@@ -1,10 +1,10 @@
 ---
 title: "Bewertung meines Home Automation-Vergleichs durch Perplexity"
 layout: default
-created: Thu Apr 3 23:26:31 2025 +0200
-createdlink: 23cd528
-lastmod: Thu Apr 3 23:26:31 2025 +0200
-commitlink: 23cd528
+created: 2025-04-03T15:55:04+02:00
+createdlink: dc2d9ca
+lastmod: 2025-04-04T00:01:14+02:00
+commitlink: c675867
 ---
 
 # Frage an Perplexity

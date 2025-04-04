@@ -1,10 +1,10 @@
 ---
 title: "Fix für systemd-resolved: 'Clock change detected' unter WSL2"
 layout: default
-created: Tue Apr 1 11:40:24 2025 +0200
-createdlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/cc8079f
-lastmod: Tue Apr 1 12:51:35 2025 +0200
-commitlink: https://github.com/pdfkungfoo/pdfkungfoo-seiten/commit/5820484
+created: 2025-04-01T11:40:24+02:00
+createdlink: cc8079f
+lastmod: 2025-04-01T13:30:06+02:00
+commitlink: bd06cd6
 ---
 
 
